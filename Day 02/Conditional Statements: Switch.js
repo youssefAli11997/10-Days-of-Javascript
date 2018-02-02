@@ -1,8 +1,8 @@
 //link: https://www.hackerrank.com/challenges/js10-switch/problem
 function getLetter(s) {
-    let letter;
+    let letter = s[0];
     // Write your code here
-    switch(s[0]){
+    switch(letter){
         case 'a':
         case 'i':
         case 'e':
