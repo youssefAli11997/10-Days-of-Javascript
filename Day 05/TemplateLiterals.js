@@ -10,9 +10,8 @@
  * expressions: The tagged template literal's array of expression values (i.e., [area, perimeter]).
  */
 function sides(literals, ...expressions) {
-    const a = expressions[0];
-    const p = expressions[1];
+    const [a, p] = expressions;
     const sqrt = Math.sqrt(p ** 2 - 16 * a);
 
-    return [(p + sqrt) / 4, (p - sqrt) / 4].sort();
+    return [(p + sqrt) / 4, (p - sqrt) / 4];
 }
