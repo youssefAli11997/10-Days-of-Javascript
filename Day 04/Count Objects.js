@@ -10,3 +10,11 @@ function getCount(objects) {
         return o.x == o.y;
     }).length;
 }
+//method 2
+let c=0;
+objects.forEach(function(i) {
+if(i.x==i.y)
+    c++;
+})
+    return c
+}
